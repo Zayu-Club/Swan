@@ -1,0 +1,29 @@
+{
+    "public_ip": "",
+    "cycle_period": 2,
+    "remindServerChan": {
+        "enable": "false",
+        "sckey": ""
+    },
+    "remindPushBear": {
+        "enable": "false",
+        "SendKey": ""
+    },
+    "remindMail": {
+        "enable": "false",
+        "smtp_host": "",
+        "smtp_user": "",
+        "smtp_pass": "",
+        "sender": "",
+        "receivers": [
+            ""
+        ]
+    },
+    "remindWeCom": {
+        "enable": "false",
+        "corpid": "",
+        "agentid": "",
+        "corpsecret": "",
+        "receivers_userid": ""
+    }
+}

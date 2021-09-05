@@ -1,0 +1,16 @@
+[Unit]
+Description=The Service for Dynamic IP address monitoring
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+PIDFile=/run/DynaIPmonitor.pid
+WorkingDirectory=/home/xxy/PythonTools/IP_Address_Change_Reminder
+ExecStart=/usr/bin/python3 IP_Address_Change_Reminder.py
+KillSignal=SIGQUIT
+TimeoutStopSec=5
+KillMode=process
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
